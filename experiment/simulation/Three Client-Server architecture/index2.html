@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three-Tier Client Server Architecture</title>
+  <link rel="stylesheet" href="css/styles2.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+</head>
+<body>
+  <div class="page-container">
+    <div id="mainContent">
+      <div class="heading-container">
+        <h1>Three-Tier Client Server Architecture</h1>
+        <button id="instructionsBtn">Instructions</button>
+      </div>
+
+      <!-- Instructions Modal -->
+      <div id="instructionsModal">
+        <div id="instructionsContent">
+          <button id="closeBtn" aria-label="Close instructions">Close</button>
+          <h2>Instructions</h2>
+         <ul>
+  <li><strong>Send Request:</strong> Click the "Send Request" button to enter your name, email, and message. You'll see an animation showing data flowing from the client to the server. After completing all fields, press the "Enter" key to begin the request animation.</li>
+
+  <li><strong>Send Response:</strong> After sending the request, click "Send Response" to simulate a server reply back to the client. Once all response fields are filled, press the "Enter" key to send the response animation.</li>
+
+  <li><strong>Fetch Data:</strong> Enter your email address to retrieve the data you previously submitted.</li>
+
+  <li><strong>Reset:</strong> Click "Reset" to clear the form and restart the animation process.</li>
+
+  <li><strong>Print:</strong> Click "Print" to generate a print-friendly version of the page layout and the data currently displayed.</li>
+</ul>
+
+        </div>
+      </div>
+
+      <!-- Main Grid Container -->
+      <div id="container">
+        <!-- SVG animation lines -->
+        <svg id="svgContainer"></svg>
+
+        <!-- Presentation Tier -->
+        <div class="tier-box" id="presentation-tier">
+          <h2 class="tier-title">Presentation Tier</h2>
+          <div class="devices source-container">
+            <div class="device node">
+              <img src="images/11.gif" alt="Workstation">
+              <div class="label">Workstation</div>
+            </div>
+            <div class="device node">
+              <img src="images/22.gif" alt="Smartphone">
+              <div class="label">Smartphone</div>
+            </div>
+            <div class="device node">
+              <img src="images/3.gif" alt="Laptop">
+              <div class="label">Laptop</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Application Tier -->
+        <div class="tier-box" id="application-tier">
+          <h2 class="tier-title">Application Tier<br><small>(Business Logic)</small></h2>
+          <div id="destination" class="node">
+            <img src="images/47.gif" alt="Internet" class="tier-image">
+          </div>
+        </div>
+
+        <!-- Server Tier -->
+        <div class="tier-box" id="server-tier">
+          <h2 class="tier-title">Server Tier<br><small>(Database)</small></h2>
+          <div id="destination2" class="node">
+            <img src="images/34.gif" alt="Server" class="tier-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div id="buttonContainer">
+        <button id="sendButton">Send Request</button>
+        <button id="resetBtn" onclick="location.reload()">Reset</button>
+        <button id="sendresponse">Send Response</button>
+        <button id="printbtn" onclick="window.print()">Print</button>
+        <button id="showTier3IntroBtn">About</button>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <b>&copy; 2024 | Virtual Labs, IIT Roorkee</b>
+      </footer>
+    </div>
+
+    <!-- Tables Container -->
+    <div id="tablesContainer" class="tables-container">
+      <div id="dataDisplay" style="display: none;">
+        <button id="closeDataBoxBtn" class="close-btn" aria-label="Close data table">X</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody id="dataTableBody"></tbody>
+        </table>
+      </div>
+      <div id="responseBox" style="display: none;">
+        <button id="closeResponseBoxBtn" class="close-btn" aria-label="Close response box">X</button>
+        <form id="responseInput">
+          <label for="fetchEmail">Email:</label>
+          <input type="email" id="fetchEmail" name="fetchEmail" required aria-required="true">
+          <button type="button" id="fetchBtn">Fetch Data</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody id="responseTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Form Input -->
+    <div id="questionBox" style="display: none;">
+     <button id="cutBtn" class="close-btn" aria-label="Close form">X</button>
+      <form id="questionInput">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required aria-required="true"></textarea>
+      </form>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalOverlay"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script2.js"></script>
+  <script>
+    function scaleContent() {
+      const mainContent = document.getElementById('mainContent');
+      const scale = Math.max((window.innerWidth * 0.65) / 900, 0.5);
+      mainContent.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', scaleContent);
+    window.addEventListener('DOMContentLoaded', scaleContent);
+  </script>
+</body>
+</html>
