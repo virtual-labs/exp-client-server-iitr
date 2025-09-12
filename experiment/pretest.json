@@ -1,39 +1,63 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+  "content": {
+    "title": "Two-Tier Client-Server Architecture",
+    "section": "Pre-Test",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the main characteristic of a Two-Tier Client-Server Architecture?",
+        "options": [
+          "a. Client and Server are separate but communicate through an intermediary.",
+          "b. Client and Server communicate directly without an intermediary.",
+          "c. Multiple servers interact with a single client.",
+          "d. Data is processed on the client side only."
+        ],
+        "answer": "b"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q2",
+        "question": "In a Two-Tier Architecture, where is the business logic typically located?",
+        "options": [
+          "a. On the client side",
+          "b. On the server side",
+          "c. In a separate middleware",
+          "d. In the database"
+        ],
+        "answer": "b"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "id": "q3",
+        "question": "Which of the following is a disadvantage of Two-Tier Architecture?",
+        "options": [
+          "a. Scalability issues",
+          "b. Reduced performance",
+          "c. Increased complexity",
+          "d. Enhanced security"
+        ],
+        "answer": "a"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q4",
+        "question": "In a Two-Tier Architecture, which component handles the user interface?",
+        "options": [
+          "a. Server",
+          "b. Middleware",
+          "c. Client",
+          "d. Database"
+        ],
+        "answer": "c"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+      {
+        "id": "q5",
+        "question": "What is one advantage of Two-Tier Client-Server Architecture?",
+        "options": [
+          "a. Simplified design and implementation",
+          "b. Better fault tolerance",
+          "c. Easy to scale horizontally",
+          "d. Enhanced data security"
+        ],
+        "answer": "a"
+      }
+    ]
+  }
 }
