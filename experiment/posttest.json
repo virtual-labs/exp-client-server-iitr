@@ -1,63 +1,57 @@
-{
-  "content": {
-    "title": "Two-tier and three-tier client-server architecture",
-    "section": "Post-Test",
-    "questions": [
-      {
-        "id": "q1",
+[
+ {
         "question": "Which layer is responsible for handling data processing in the Three-Tier architecture?",
-        "options": [
-          "a. Presentation layer",
-          "b. Application layer",
-          "c. Data layer",
-          "d. Network layer"
-        ],
-        "answer": "b"
+        "answers": {
+          "a": "Presentation layer",
+          "b": "Application layer",
+          "c": "Data layer",
+          "d": "Network layer"
+        },
+        "correctAnswer": "b"
       },
       {
-        "id": "q2",
+        
         "question": "What is the primary advantage of using a Three-Tier architecture over a Two-Tier architecture?",
-        "options": [
-          "a. Increased complexity",
-          "b. Better scalability and maintainability",
-          "c. Faster client response time",
-          "d. Reduced security"
-        ],
-        "answer": "b"
+        "answers": {
+          "a": "Increased complexity",
+          "b": "Better scalability and maintainability",
+          "c": "Faster client response time",
+          "d": "Reduced security"
+        },
+        "correctAnswer": "b"
       },
       {
-        "id": "q3",
+        
         "question": "In a Three-Tier architecture, which layer is responsible for interacting with the database?",
-        "options": [
-          "a. Presentation layer",
-          "b. Business logic layer",
-          "c. Data access layer",
-          "d. Client layer"
-        ],
-        "answer": "c"
+        "answers": {
+          "a": "Presentation layer",
+          "b": "Business logic layer",
+          "c": "Data access layer",
+          "d": "Client layer"
+        },
+        "correctAnswer": "c"
       },
       {
-        "id": "q4",
+        
         "question": "Which of the following technologies is typically used for the Application layer in a Three-Tier architecture?",
-        "options": [
-          "a.  HTML/CSS",
-          "b. JavaScript",
-          "c. Java EE or .NET",
-          "d.SQL"
-        ],
-        "answer": "c"
+        "answers": {
+          "a": "HTML/CSS",
+          "b": "JavaScript",
+          "c": "Java EE or .NET",
+          "d": "SQL"
+        },
+        "correctAnswer": "c"
       },
       {
-        "id": "q5",
+       
         "question": "A receiver using stop-and-wait ARQ sends ACK framed numbered __________.",
-        "options": [
-          "a. Application layer",
-          "b. Data access layer",
-          "c. Presentation layer",
-          "d. Business logic layer"
-        ],
-        "answer": "c"
+        "answers": {
+          "a": "Application layer",
+          "b": "Data access layer",
+          "c": "Presentation layer",
+          "d": "Business logic layer"
+        },
+        "correctAnswer": "c"
       }
     ]
-  }
-}
+  
