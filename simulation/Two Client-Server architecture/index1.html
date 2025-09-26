@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0">
+    <title>Two-Tier Client Server Architecture</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button id="instructionsBtn" aria-label="Open Instructions">Instructions</button>
+
+    <div id="instructionsModal">
+        <div id="instructionsContent">
+            <button id="closeBtn" aria-label="Close Instructions">Close</button>
+            <h2>Instructions</h2>
+            <ul>
+                <li><strong>1- Send Request:</strong> Click the <strong>"Send Request"</strong> button to enter your search query in the text area that appears, then press Enter to initiate sending data packets from the client nodes to the server.</li>
+                <li><strong>Note:</strong> The user can only ask the following questions:
+                    <ul>
+                        <li>What is client?</li>
+                        <li>What is client-server architecture?</li>
+                        <li>What is server?</li>
+                        <li>What is internet?</li>
+                        <li>What is computer network?</li>
+                    </ul>
+                </li>
+                <li><strong>2- Send Response:</strong> After sending the request, click the <strong>"Send Response"</strong> button to process and visualize the server response.</li>
+                <li>The response will be generated based on predefined FAQs and displayed in the response text area.</li>
+                <li>The packets will move from the server back to the client nodes, indicating the response flow.</li>
+                <li><strong>3- Reset:</strong> Click the <strong>"Reset"</strong> button to refresh the page and reset all animations and data.</li>
+                <li><strong>4- Print:</strong> Click the <strong>"Print"</strong> button to print the current state of the page.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="heading-container">
+        <h1>Two-Tier Client Server Architecture</h1>
+    </div>
+
+    <div id="container">
+        <div id="inner-border">
+            <h3 class="clients">Clients</h3>
+            <div class="source-container">
+                <div class="source-item">
+                    <img src="images/11.gif" alt="Workstation" class="node" id="node1">
+                    <div class="label">Workstation</div>
+                </div>
+                <div class="source-item">
+                    <img src="images/22.gif" alt="Smartphone" class="node" id="node3">
+                    <div class="label">Smartphone</div>
+                </div>
+                <div class="source-item">
+                    <img src="images/3.gif" alt="Laptop" class="node" id="node4">
+                    <div class="label">Laptop</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="internet-container">
+            <div class="node" id="destination"></div>
+            <h3 class="internet">Internet (LAN)</h3>
+            <img src="images/4.gif" alt="Internet">
+        </div>
+
+        <div id="inner-border2">
+            <h3 class="server">Server</h3>
+            <div class="node" id="destination2"></div>
+            <img src="images/32.gif" alt="Server">
+        </div>
+
+        <img id="image1" class="arrow hidden request-arrow" src="images/88.png" alt="Request Arrow 1" aria-hidden="true">
+        <img id="image2" class="arrow hidden request-arrow" src="images/59.png" alt="Request Arrow 2" aria-hidden="true">
+        <img id="image3" class="arrow hidden request-arrow" src="images/99.png" alt="Request Arrow 3" aria-hidden="true">
+        <img id="image4" class="arrow hidden response-arrow" src="images/60.png" alt="Response Arrow 1" aria-hidden="true">
+        <img id="image5" class="arrow hidden response-arrow" src="images/89.png" alt="Response Arrow 2" aria-hidden="true">
+        <img id="image6" class="arrow hidden response-arrow" src="images/100.png" alt="Response Arrow 3" aria-hidden="true">
+
+        <svg id="svgContainer"></svg>
+    </div>
+
+    <div id="buttonContainer">
+        <button id="sendButton">Send Request</button>
+        <button id="resetBtn" onclick="location.reload()">Reset</button>
+        <button id="sendresponse">Send Response</button>
+        <button id="printbtn" onclick="window.print()">Print</button>
+    </div>
+
+    <div id="questionBox">
+        <textarea id="questionInput" placeholder="Type your question here..." aria-label="Enter your question"></textarea>
+    </div>
+
+    <div id="responseBox">
+        <textarea id="responseInput" readonly aria-label="Server response"></textarea>
+        <button id="closeResponse" aria-label="Close Response">Close</button>
+    </div>
+
+    <footer>&copy; 2024 | Virtual Labs, IIT Roorkee</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+ {
+        "question": "Which layer is responsible for handling data processing in the Three-Tier architecture?",
+        "answers": {
+          "a": "Presentation layer",
+          "b": "Application layer",
+          "c": "Data layer",
+          "d": "Network layer"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        
+        "question": "What is the primary advantage of using a Three-Tier architecture over a Two-Tier architecture?",
+        "answers": {
+          "a": "Increased complexity",
+          "b": "Better scalability and maintainability",
+          "c": "Faster client response time",
+          "d": "Reduced security"
+        },
+        "correctAnswer": "b"
+      },
+      {
+        
+        "question": "In a Three-Tier architecture, which layer is responsible for interacting with the database?",
+        "answers": {
+          "a": "Presentation layer",
+          "b": "Business logic layer",
+          "c": "Data access layer",
+          "d": "Client layer"
+        },
+        "correctAnswer": "c"
+      },
+      {
+        
+        "question": "Which of the following technologies is typically used for the Application layer in a Three-Tier architecture?",
+        "answers": {
+          "a": "HTML/CSS",
+          "b": "JavaScript",
+          "c": "Java EE or .NET",
+          "d": "SQL"
+        },
+        "correctAnswer": "c"
+      },
+      {
+       
+        "question": "A receiver using stop-and-wait ARQ sends ACK framed numbered __________.",
+        "answers": {
+          "a": "Application layer",
+          "b": "Data access layer",
+          "c": "Presentation layer",
+          "d": "Business logic layer"
+        },
+        "correctAnswer": "c"
+      }
+    ]
+  
